@@ -287,7 +287,7 @@ if (john.indexOf('teacher') === -1) {
 
 
 ///////////////////////////////////////
-// Objects, we don't have any defined order.
+// Objects & properties: In objects we don't have any defined order.
 // first way to create objects.
 /*
 var john = {
