@@ -1,8 +1,8 @@
-const second = () => {
-    setTimeout(() => {
-         console.log('Async Hey there');
-     }, 2000);
- }
+// const second = () => {
+//     setTimeout(() => {
+//         console.log('Async Hey there');
+//     }, 2000);
+// }
 
 // const first = () => {
 //     console.log('Hey there');
@@ -65,25 +65,26 @@ const second = () => {
 //     console.log(recipe);
 //     return getRelated('Jonas Schmedtmann');
 // })
- .then(recipe => {
-     console.log(recipe);
- })
- .catch(error => {
-     console.log('Error!!');
- });
+// .then(recipe => {
+//     console.log(recipe);
+// })
+// .catch(error => {
+//     console.log('Error!!');
+// });
 
- async function getRecipesAW() {
-     const IDs = await getIDs;
-     console.log(IDs);
-     const recipe = await getRecipe(IDs[2]);
-     console.log(recipe);
-     const related = await getRelated('Jonas Schmedtmann');
-     console.log(related);
+// async function getRecipesAW() {
+//     const IDs = await getIDs;
+//     console.log(IDs);
+//     const recipe = await getRecipe(IDs[2]);
+//     console.log(recipe);
+//     const related = await getRelated('Jonas Schmedtmann');
+//     console.log(related);
 
-return recipe;
- }
-getRecipesAW().then(result => console.log(`${result} is the best ever!`));
+//     return recipe;
+// }
+// getRecipesAW().then(result => console.log(`${result} is the best ever!`));
 
+/*
 function getWeather(woeid) {
     fetch(`https://crossorigin.me/https://www.metaweather.com/api/location/${woeid}/`)
         .then(result => {
@@ -118,4 +119,4 @@ let dataLondon;
 getWeatherAW(44418).then(data => {
     dataLondon = data
     console.log(dataLondon);
-});
+});*/
