@@ -1,7 +1,7 @@
 ///////////////////////////////////////
 //variables & Datatypes 
 
-/*var name = 'John';
+var name = 'John';
 console.log(name);
 
 var lastName = 'Smith';
@@ -11,7 +11,7 @@ var age = 26;
 console.log(age);
 
 var fullAge = true;
-console.log(fullAge);*/
+console.log(fullAge);
 
 
 
@@ -81,7 +81,7 @@ console.log(ageMark);
 
 
 ///////////////////////////////////////
-// Lecture: if/else statements
+// if/else statements
 /*
 var name = 'John';
 var age = 26;
@@ -113,7 +113,7 @@ if (23 === "23") {
 
 
 ///////////////////////////////////////
-// Lecture: boolean logic and switch
+// boolean logic and switch
 /*
 var age = 20;
 
