@@ -1,7 +1,9 @@
+/*
 ///////////////////////////////////////
 //variables & Datatypes 
+/!*
 
-var name = 'John';
+/!*var name = 'John';
 console.log(name);
 
 var lastName = 'Smith';
@@ -11,58 +13,59 @@ var age = 26;
 console.log(age);
 
 var fullAge = true;
-console.log(fullAge);
+console.log(fullAge);*!/
 
 
+/!*var a ;
+
+console.log(a);*!/
 
 
 ///////////////////////////////////////
 // variables & type coercion
 
-/*var name = 'John';
+var name = 'John';
 var age = 26;
 
-//console.log(name + age);
-//console.log(age + age);
+/!*console.log(name + age);
+console.log(age + age);*!/
 
 var job, isMarried;
 
 //console.log(job);
 
-job = 'teacher';
+//job = 'teacher';
 isMarried = false;
 
 console.log(name + ' ' + age + ' ' + job + '' + isMarried +  '');
 
-
-console.log(name + ' is a ' + age + ' years old ' + job + '. Is he married? ' + isMarried + '.');
+//console.log(name + ' is a ' + age + ' years old ' + job + '. Is he married? ' + isMarried + '.');
 
 age = 'thirty six';
 job = 'driver';
 
-console.log(name + ' is a ' + age + ' years old ' + job + '. Is he married? ' + isMarried + '.');
+//console.log(name + ' is a ' + age + ' years old ' + job + '. Is he married? ' + isMarried + '.');
 
 
-var lastName = prompt('What is the last name?');
-console.log(lastName);
+//var lastName = prompt('What is the last name?');
+//console.log(lastName);
 
-alert(name + ' is a ' + age + ' years old ' + job + '. Is he married? ' + isMarried + '.');*/
+//alert(name + ' is a ' + age + ' years old ' + job + '. Is he married? ' + isMarried + '.');
 
+*!/
 
 
 
 ///////////////////////////////////////
 // Javascript operators
-/*
 var now = 2016;
 var birthYear = now - 26;
 
 birthYear = now - 26 * 2;
-//2016 - 52
-//1964
 
 console.log(birthYear);
 
+/!*
 var ageJohn = 30;
 var ageMark = 30;
 
@@ -76,13 +79,13 @@ ageMark = ageMark * 2;
 
 console.log(ageJohn);
 console.log(ageMark);
-*/
+*!/
 
 
 
 ///////////////////////////////////////
 // if/else statements
-/*
+/!*
 var name = 'John';
 var age = 26;
 var isMarried = 'yes';
@@ -108,13 +111,13 @@ if(isMarried) {
 if (23 === "23") {
     console.log('Something to print...');
 }
-*/
+*!/
 
 
 
 ///////////////////////////////////////
 // boolean logic and switch
-/*
+/!*
 var age = 20;
 
 if (age < 20) {
@@ -143,63 +146,13 @@ switch (job) {
     default:
         console.log('John does something else.');
 }
-*/
-
-
-
-///////////////////////////////////////
-// CODING CHALLENGE 1
-
-/*
-John and a friend invented a simple game where the player with the highest value of his height (in centimeters) plus five times his age wins (what a silly game :)
-
-1. Create variables for the heights and ages of two friends and assign them some values
-2. Calculate their scores
-3. Decide who wins and print the winner to the console. Include the score in the string that you output to the console. Don't forget that there can be a draw (both players with the same score).
-
-4. EXTRA: Add a third player and now decide who wins. Hint: you will need the && operator to take the decision. If you can't solve this one, just watch the solution, it's no problem :)
-
-
-// SOLUTION:
-var heightJohn = 170;
-var heightMike = 195;
-var ageJohn = 36;
-var ageMike = 29;
-
-var scoreJohn = heightJohn + 5 * ageJohn;
-var scoreMike = heightMike + 5 * ageMike;
-
-
-if (scoreJohn > scoreMike) {
-    console.log('John wins the game with ' + scoreJohn + ' points!');
-} else if (scoreMike > scoreJohn) {
-    console.log('Mike wins the game with ' + scoreMike + ' points!');
-} else if (scoreJohn === scoreMike) {
-    console.log('There is a draw.');
-}
-
-var heightMary = 158;
-var ageMary = 31;
-var scoreMary = heightMary + 5 * ageMary;
-
-
-if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
-    console.log('John wins the game with ' + scoreJohn + ' points!');
-} else if (scoreMike > scoreJohn && scoreMike > scoreMary) {
-    console.log('Mike wins the game with ' + scoreMike + ' points!');
-} else if (scoreMary > scoreJohn && scoreMary > scoreMike) {
-    console.log('Mary wins the game with ' + scoreMary + ' points!');
-} else {
-    console.log('It\'s a draw.');
-}
-*/
-
+*!/
 
 
 ///////////////////////////////////////
 // Functions
 
-/*
+/!*
 function calculateAge(yearOfBirth) {
     var age = 2016 - yearOfBirth;
     return age;
@@ -227,13 +180,13 @@ function yearsUntilRetirement(name, year) {
 yearsUntilRetirement('John', 1990);
 yearsUntilRetirement('Mike', 1969);
 yearsUntilRetirement('Mary', 1948);
-*/
+*!/
 
 
 
 ///////////////////////////////////////
 // Functions Statements and expressions
-/*
+/!*
 
 // This is function statement
 function someFun(par) {
@@ -253,13 +206,13 @@ var x = 3;
 if (x === 5) {
     //do soemthing
 }
-*/
+*!/
 
 
 
 ///////////////////////////////////////
 // Arrays
-/*var names = ['John', 'Jane', 'Mark'];
+/!*var names = ['John', 'Jane', 'Mark'];
 var years = new Array(1990, 1969, 1948);
 console.log(names);
 
@@ -282,14 +235,14 @@ console.log(john);
 alert(john.indexOf('Smith'));
 if (john.indexOf('teacher') === -1) {
     console.log('John is NOT a teacher.');
-}*/
+}*!/
 
 
 
 ///////////////////////////////////////
 // Objects & properties: In objects we don't have any defined order.
 // first way to create objects.
-/*
+/!*
 var john = {
     name: 'John',
     lastName: 'Smith',
@@ -320,7 +273,7 @@ jane['job'] = 'retired';
 jane['isMarried'] = true;
 
 console.log(jane);
-*/
+*!/
 
 
 
@@ -328,7 +281,7 @@ console.log(jane);
 // Objects and methods
 
 // v1.0
-/*var john = {
+/!*var john = {
     name: 'John',
     lastName: 'Smith',
     yearOfBirth: 1990,
@@ -390,20 +343,20 @@ var mike = {
 };
 
 mike.calculateAge();
-console.log(mike);*/
+console.log(mike);*!/
 
 
 
 ///////////////////////////////////////
 // Loops
 
-/*
+/!*
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
-*/
+*!/
 
-/*
+/!*
 0, true, print 0, update i to 1
 1, true, print 1, update i to 2
 .
@@ -411,9 +364,9 @@ for (var i = 0; i < 10; i++) {
 .
 9, true, print 9, update i to 10
 10, FALSE, end loop!
-*/
+*!/
 
-/*
+/!*
 var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
 
 // for loops
@@ -449,14 +402,14 @@ for (var i = 1; i <= 5; i++) {
     
     console.log(i);
 }
-*/
+*!/
 
 
 
 ///////////////////////////////////////
 // CODING CHALLENGE 2
 
-/*
+/!*
 1. Create an array with some years where persons were born
 2. Create an empty array (just [] )
 3. Use a loop to fill the array with the ages of the persons
@@ -469,9 +422,9 @@ Example input:  [1965, 2008, 1992]
 Example output: [true, false, true]
 
 Hint: you can use a loop not only to read from an array, like y[i], but also to set values in an array, like y[i] = ... You can also use the specific array methods.
-*/
+*!/
 
-/*
+/!*
 function printFullAge(years) {
     var ages = [];
     var fullAges = [];
@@ -496,7 +449,8 @@ function printFullAge(years) {
 var years = [2001, 1985, 1994, 2014, 1973];
 var full_1 = printFullAge(years);
 var full_2 = printFullAge([2012, 1915, 1999]);
+*!/
+
+
+
 */
-
-
-

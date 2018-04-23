@@ -2,15 +2,18 @@
 // Hoisting
 
 // functions declarations
-//calculateAge(1965);
 /*
+
+calculateAge(1965);
+
 function calculateAge(year) {
     console.log(2018 - year);
 }
 
 calculateAge(1965);
+*/
 
-// retirement(1956);
+/* retirement(1956);
 // functions expressions
 var retirement = function(year) {
     console.log(65 - (2018 - year));
@@ -24,7 +27,6 @@ retirement(1956);*/
 /*var age = 23;   // stores in global execution context object, so in the variable object of global execution context object, sounds confusing.
 
 console.log(age);
-
 
 function foo() {   // stores in his own execution context object
     //console.log(age);
