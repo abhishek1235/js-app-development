@@ -1,122 +1,91 @@
-// const second = () => {
-//     setTimeout(() => {
-//         console.log('Async Hey there');
-//     }, 2000);
-// }
+/*const second = () => {
 
-// const first = () => {
-//     console.log('Hey there');
-//     second();
-//     console.log('The end');
-// }
+    console.log("sync hey there")
+   setTimeout(() => {
+         console.log('Async Hey there');
+     }, 2000);
+ }
 
-// first();
+ const first = () => {
+     console.log('Hey there');
+     second();
+     console.log('The end');
+ }
 
-// function getRecipe() {
-//     setTimeout(() => {
-//         const recipeID = [523, 883, 432, 974];
-//         console.log(recipeID);
+ first();*/
 
-//         setTimeout(id => {
-//             const recipe = {title: 'Fresh tomato pasta', publisher: 'Jonas'};
-//             console.log(`${id}: ${recipe.title}`);
+/* function getRecipe() {
+     setTimeout(() => {
+         const recipeID = [523, 883, 432, 974];
+         console.log(recipeID);
 
-//             setTimeout(publisher => {
-//                 const recipe2 = {title: 'Italian Pizza', publisher: 'Jonas'};
-//                 console.log(recipe);
-//             }, 1500, recipe.publisher);
+         setTimeout(id => {
+             const recipe = {title: 'tomato pasta', publisher: 'Ankur'};
+             console.log(`${id}: ${recipe.title}`);
 
-//         }, 1500, recipeID[2]);
+             setTimeout(publisher => {
+                 const recipe2 = {title: 'Italian Pizza', publisher: 'Ankur'};
+                 console.log(recipe);
+             }, 1500, recipe.publisher);
 
-//     }, 1500);
-// }
-// getRecipe();
+         }, 1500, recipeID[2]);
 
-// const getIDs = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         resolve([523, 883, 432, 974]);
-//     }, 1500);
-// });
+     }, 1500);
+ }
+ getRecipe();*/
 
-// const getRecipe = recID => {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(ID => {
-//             const recipe = {title: 'Fresh tomato pasta', publisher: 'Jonas'};
-//             resolve(`${ID}: ${recipe.title}`);
-//         }, 1500, recID);
-//     });
-// };
+/* const getIDs = new Promise((resolve, reject) => {
+     setTimeout(() => {
+         resolve([523, 883, 432, 974]);
+        // reject([523, 883, 432, 974]);
 
-// const getRelated = publisher => {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(pub => {
-//             const recipe = {title: 'Italian Pizza', publisher: 'Jonas'};
-//             resolve(`${pub}: ${recipe.title}`);
-//         }, 1500, publisher);
-//     });
-// };
+     }, 1500);
+ });
 
-// getIDs
-// .then(IDs => {
-//     console.log(IDs);
-//     return getRecipe(IDs[2]);
-// })
-// .then(recipe => {
-//     console.log(recipe);
-//     return getRelated('Jonas Schmedtmann');
-// })
-// .then(recipe => {
-//     console.log(recipe);
-// })
-// .catch(error => {
-//     console.log('Error!!');
-// });
+ const getRecipe = recID => {
+     return new Promise((resolve, reject) => {
+         setTimeout(ID => {
+             const recipe = {title: ' tomato pasta', publisher: 'Ankur'};
+             resolve(`${ID}: ${recipe.title}`);
+         }, 1500, recID);
+     });
+ };
 
-// async function getRecipesAW() {
-//     const IDs = await getIDs;
-//     console.log(IDs);
-//     const recipe = await getRecipe(IDs[2]);
-//     console.log(recipe);
-//     const related = await getRelated('Jonas Schmedtmann');
-//     console.log(related);
+ const getRelated = publisher => {
+     return new Promise((resolve, reject) => {
+         setTimeout(pub => {
+             const recipe = {title: 'Italian Pizza', publisher: 'Ankur'};
+             resolve(`${pub}: ${recipe.title}`);
+         }, 1500, publisher);
+     });
+ };
 
-//     return recipe;
-// }
-// getRecipesAW().then(result => console.log(`${result} is the best ever!`));
+ getIDs
+ .then(IDs => {
+     console.log(IDs);
+     return getRecipe(IDs[2]);
+ })
+ .then(recipe => {
+     console.log(recipe);
+     return getRelated('Ankur Tyagi');
+ })
+ .then(recipe => {
+     console.log(recipe);
+ })
+ .catch(error => {
+     console.log('Error!!');
+ });*/
 
 /*
-function getWeather(woeid) {
-    fetch(`https://crossorigin.me/https://www.metaweather.com/api/location/${woeid}/`)
-        .then(result => {
-            // console.log(result);
-            return result.json();
-        })
-        .then(data => {
-            // console.log(data);
-            const today = data.consolidated_weather[0];
-            console.log(`Temperatures today in ${data.title} stay between ${today.min_temp} and ${today.max_temp}.`);
-        })
-        .catch(error => console.log(error));
-}
-getWeather(2487956);
-getWeather(44418);
+ async function getRecipesAW() {
+     const IDs = await getIDs;
+     console.log(IDs);
+     const recipe = await getRecipe(IDs[2]);
+     console.log(recipe);
+     const related = await getRelated('Ankur Tyagi');
+     console.log(related);
 
-
-async function getWeatherAW(woeid) {
-    try {
-        const result = await fetch(`https://crossorigin.me/https://www.metaweather.com/api/location/${woeid}/`);
-        const data = await result.json();
-        const tomorrow = data.consolidated_weather[1];
-        console.log(`Temperatures tomorrow in ${data.title} stay between ${tomorrow.min_temp} and ${tomorrow.max_temp}.`);
-        return data;
-    } catch(error) {
-        alert(error);
-    }
-}
-getWeatherAW(2487956);
-
-let dataLondon;
-getWeatherAW(44418).then(data => {
-    dataLondon = data
-    console.log(dataLondon);
-});*/
+     return recipe;
+ }
+ getRecipesAW().then(result => console.log(`${result} is the best!`));
+*/

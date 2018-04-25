@@ -36,13 +36,15 @@ function foo() {   // stores in his own execution context object
 foo();
 console.log(age);*/
 
-// Most imp use case of hoisting is not even the variables but fact that we can use for function declaration before we actually use them in code.
+// Most imp use case of hoisting is not even the variables but fact that we
+// can use for function declaration before we actually use them in code.
 
 /////////////////////////////////////
 // Scoping
 
 // First scoping example
-/*var a = 'Hello!';
+/*
+var a = 'Hello!';
 first();
 
 function first() {
@@ -53,11 +55,13 @@ function first() {
         var c = 'Hey!';
         console.log(a + b + c);
     }
-}*/
+}
+*/
 
 
 // Example to show the difference between execution stack and scope chain
-/*var a = 'Hello!';
+/*
+var a = 'Hello!';
 first();
 
 function first() {
@@ -65,6 +69,7 @@ function first() {
     second();
 
     function second() {
+        first();
         var c = 'Hey!';
         third()
     }
@@ -72,9 +77,12 @@ function first() {
 
 function third() {
     var d = 'John';
-    console.log(c);
-    //console.log(a+d);
-}*/
+    second();
+    console.log(a + c);
+    //console.log(c);
+    console.log(a+d);
+}
+*/
 
 
 
@@ -82,15 +90,15 @@ function third() {
 // The this keyword
 
 //console.log(this);
-/*
-calculateAge(1985);
+/*calculateAge(1985);
 
 function calculateAge(year) {
     console.log(2018 - year);
     console.log(this);
-}
+}*/
 
 //V1.0
+/*
 
 var john = {
     name: 'John',
@@ -101,20 +109,19 @@ var john = {
     }
 }
 
-john.calculateAge();*/
+john.calculateAge();
+*/
 
 
 
 // V2.0
-/*
-var john = {
+/*var john = {
     name: 'John',
     yearOfBirth: 1990,
     calculateAge: function() {
         console.log(this);
         console.log(2018 - this.yearOfBirth);
-/!*
-        function innerFunction() {
+      /!*  function innerFunction() {
             console.log(this);
         }
         innerFunction();*!/
@@ -130,5 +137,4 @@ var mike = {
 
 
 mike.calculateAge = john.calculateAge; // method borrowing
-mike.calculateAge();
-*/
+mike.calculateAge();*/

@@ -1,8 +1,7 @@
 // Function constructor
 
 // john object literal
-/*
-var john = {
+/*var john = {
     name: 'John',
     yearOfBirth: 1990,
     job: 'teacher'
@@ -36,8 +35,7 @@ mark.calculateAge();
 
 console.log(john.lastName);
 console.log(jane.lastName);
-console.log(mark.lastName);
-*/
+console.log(mark.lastName);*/
 
 // Object.create
 
@@ -87,24 +85,4 @@ obj1.age = 30;
 console.log(obj1.age);
 console.log(obj2.age);
 
-
-// Functions
-
-var age = 27;
-var obj = {
-    name: 'Ankur',
-    city: 'Pune'
-};
-
-function change(a,b) {
-
-   a =30;
-   b.city = 'Delhi';
-    
-}
-
-change(age,obj);
-
-console.log(age);
-console.log(obj.city);
 */
