@@ -3,10 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <title>JavaScript Language Basics</title>
+
+        <style>
+            .box {
+                width: 200px;
+                padding: 25px 80px;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 30px;
+            }
+
+            .green { background-color: green; }
+            .blue { background-color: dodgerblue; }
+            .orange { background-color: orangered; }
+
+        </style>
     </head>
 
     <body>
         <h1>JavaScript Language Basics</h1>
+        <div class="box green">I'm green!</div>
+        <div class="box blue">I'm blue!</div>
+        <div class="box orange">I'm orange!</div>
+
+        <script src="polyfill.min.js"></script>
+        <script src="script-transpiled.js"></script>
     </body>
     
     <script src="script.js"></script>
@@ -16,4 +37,5 @@
     <script src="closures.js"></script>
     <script src="asynchronous.js"></script>
     <script src="codingChallengeOne.js"></script>
+    <script src="ES6.js"></script>
 </html>
